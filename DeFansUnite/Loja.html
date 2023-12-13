@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+          <a href="#">
+            <img src="Logotipo Loja Elegante Preto e Branco (1).png" alt="apple-logo" class="logo"/>
+          </a>
+          <ul class="nav">
+              <li><a href="DeFans.html">Home</a></li>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="Discografia.html">Discografia</a></li>
+              <li><a href="Gravadora.html">Gravadora</a></li>
+              <li><a href="Loja.html">Loja</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="https://www.eminem.com/">Oficial</a></li>
+              <label class="switch">
+                <input type="checkbox" class="checkbox" id="trocar-tema">
+                <div class="slider"></div>
+            </label>
+              <li class="search-full"><input type="text" placeholder="Como posso te ajudar fan?" /></li>
+          </ul>
+        </div>
+      </nav>
+
+              <!-- ***************** header ******************** -->
+              <!-- ***************** inicio ******************** -->
+              <section id="fullpage">
+                  <section  class="section section_2 ">
+                   
+                  <div id="carrinho-icon" onclick="toggleCarrinho()">
+                      <div class="imagem">
+                          <img src="img/cesta.png" alt="">
+                      </div>
+                      <span id="cont-carrinho"></span>
+                  </div>
+                  <div id="carrinho-itens" >
+                      <ul id="itens-lista"></ul>
+                      <span id="preco-total">Valor Total: R$0,00</span>
+                      <button class="limpa" onclick="limparCarrinho()">Limpar</button>
+                  </div>
+              </div>
+          </header>
+          <main id="main">
+              <div class="container">
+                  <div class="produtos">
+                      <div class="produto-linha">
+                          <div class="produto">
+                              <div class="imagem">
+                                  <img src="https://www.merchandisingplaza.com.br/495594/Camiseta-Eminem-Camiseta-Eminem-495594-s.jpg" alt="">
+                              </div>
+                              <div class="infos">
+                                  <h3>Artigos Eminem</h3>
+                                  <p>R$ 1000,99</p>
+                                  <button onclick="addCarrinho('chuteira-1', 1000.99)">Adicionar</button>
+                              </div>
+                          </div>
+                          <div class="produto">
+                              <div class="imagem">
+                                  <img src="https://www.merchandisingplaza.com.br/487688/Camiseta-Eminem-Camiseta-Eminem-487688-s.jpg" alt="">
+                              </div>
+                              <div class="infos">
+                                  <h3>Artigos Eminem</h3>
+                                  <p>R$ 999,99</p>
+                                  <button onclick="addCarrinho('chuteira-2', 999.99)">Adicionar</button>
+                              </div>
+                          </div>
+                          <div class="produto">
+                              <div class="imagem">
+                                  <img src="https://www.merchandisingplaza.com.br/491896/Camiseta-Eminem-Camiseta-Eminem-491896-s.jpg" alt="">
+                              </div>
+                              <div class="infos">
+                                  <h3>Artigos Eminem</h3>
+                                  <p>R$ 999,00</p>
+                                  <button onclick="addCarrinho('chuteira-3', 999.00)">Adicionar</button>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="produto-linha">
+                          <div class="produto">
+                              <div class="imagem">
+                                  <img src="https://www.merchandisingplaza.com.br/454396/Camisola-Eminem-Camisola-Eminem-unissex---Design--Whatever-s.jpg" alt="">
+                              </div>
+                              <div class="infos">
+                                  <h3>Artigos Eminem</h3>
+                                  <p>R$ 999,99</p>
+                                  <button onclick="addCarrinho('chuteira-4', 999.99)">Adicionar</button>
+                              </div>
+                          </div>
+                          <div class="produto">
+                              <div class="imagem">
+                                  <img src="https://www.merchandisingplaza.com.br/483487/Sueter-Esportivo-Eminem-Sueter-Esportivo-Eminem-483487-s.jpg" alt="">
+                              </div>
+                              <div class="infos">
+                                  <h3>Artigos Eminem</h3>
+                                  <p>R$ 799,00</p>
+                                  <button onclick="addCarrinho('chuteira-5', 799.00)">Adicionar</button>
+                              </div>
+                          </div>
+                          <div class="produto">
+                              <div class="imagem">
+                                  <img src="https://www.merchandisingplaza.com.br/493652/Camisola-Eminem-Camisola-Eminem-493652-s.jpg" alt="">
+                              </div>
+                              <div class="infos">
+                                  <h3>Artigos Eminem</h3>
+                                  <p>R$ 699,99</p>
+                                  <button onclick="addCarrinho('chuteira-6', 699.99)">Adicionar</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </main>
+              </section>
+              
+          <style>
+              img{
+          width: 100%;
+          height: auto;
+      }
+      
+      /* HEADER */
+      .container {
+        margin-top: 80px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+      
+      #carrinho-icon img {
+          width: 50px;
+      }
+      
+      #header, #main {
+          margin: 0 128px;
+      }
+      
+      #carrinho-icon {
+          cursor: pointer;
+          display: flex;
+          align-items: baseline;
+      }
+      
+      .produto-linha {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 70vw;
+          margin: 15px 0;
+      }
+      
+      .produto {
+          display: flex;
+          flex-direction: column;
+          width: 230px;
+          height: 280px;
+          justify-content: space-between;
+          align-items: center;    
+          text-align: center;
+          padding: 10px 0;
+          border-radius: 10px;
+      }
+      
+      .infos {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end;
+          height: 140px;
+      
+          
+      }
+      .produtos {
+          width: 90vw;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+      .produtos img {
+          width: 150px;
+      }
+      button {
+        width: 150px;
+        height: 40px;
+        border: 3px solid #6220fb;
+        border-radius: 5px;
+        transition: all 0.3s;
+        cursor: pointer;
+        background: #6220fb;
+        font-size: 1.2em;
+        font-weight: 550;
+        font-family: 'Montserrat', sans-serif;
+      }
+      
+      button:hover {
+        background: #6220fb;
+        color: white;
+        font-size: 1.5em;
+      }
+      ul {
+          list-style: none;
+          text-align: center;
+      }
+      
+      #carrinho-itens {
+          border: 1px solid black;
+          padding: 10px;
+          position: absolute;
+          left: 80%;
+          text-align: center;
+          top: 10%;
+          background-color: white;
+      }
+      
+      .add {
+          background-color: greenyellow;
+      }
+      .remove {
+          background-color: red;
+      }
+      .add, .remove {
+          padding: 2px 5px;
+          border-radius: 10px;
+          width: 23px;
+          color: white;
+      }
+      
+      .limpa {
+          background-color: darkgrey;
+      }
+      
+          </style>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+          <script src="Cia.js"></script>
+      
+</body>
+</html>

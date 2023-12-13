@@ -1,0 +1,869 @@
+@font-face {
+  font-family: 'Inter_R';
+  src: url('font/Inter-Regular.ttf');
+
+}
+
+@font-face {
+  font-family: 'Inter_L';
+  src: url('font/Inter-Light.ttf');
+
+}
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter_R', sans-serif;
+
+}
+
+body {
+  height: 100vh;
+  background-color: #000000;
+}
+
+
+
+
+
+
+
+
+/* logo */
+/* logo */
+
+
+
+.logo a{
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
+  text-decoration: none;
+}
+
+.logo-1 {
+  text-transform: uppercase;
+  position: relative;
+  width: 42px;
+  height: 42px;
+  left: 64px;
+  top: 58px;
+
+}
+
+.logo-2 {
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 107px;
+  width: max-content;
+  top: 18px;
+  font-size: 25px;
+}
+
+
+/* logo FIM */
+/* logo FIM */
+
+
+
+
+
+
+
+a{
+  text-decoration: none;
+  }
+  
+  
+  ul li{
+  list-style: none;
+  }
+  
+  .header{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+      left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 100;
+  }
+  
+  .header_left{
+  margin:0 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  }
+
+  .header_left a{
+    color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
+  text-decoration: none;
+    }
+  
+  .header_left img{
+  width: 110px;
+  }
+  
+  
+  .header_mid ul{
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  }
+  
+  
+  .header_mid ul li{
+      /*background-color:transparent;*/
+      border-radius: 10px;
+  transition: .3s;
+  }
+  
+  .header_mid ul li:hover{
+  background-color:rgba(0, 0, 0, 0.1);
+  }
+  
+  .header_mid ul li a{
+  color: #171a20;
+  margin: 0px 8px;
+  padding: 6px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  }
+  
+  .header_right{
+     margin-right: 32px;
+  }
+  
+  .header_right ul{
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  }
+  
+  
+  .header_right ul li{
+      /*background-color:transparent;*/
+      border-radius: 10px;
+  transition: .3s;
+  }
+  
+  .header_right ul li:hover{
+  background-color:rgba(0, 0, 0, 0.1);
+  }
+  
+  .header_right ul li a{
+  color: #171a20;
+  margin: 0px 8px;
+  padding: 6px 8px;
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  }
+  
+  /* header end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Letras BANNER */
+/* Letras BANNER */
+
+.letras_banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.letras_banner2 {
+    background: radial-gradient(#000000, #ffffff);
+    background-size: 100% 200%;
+    background-position: 50% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    font-size: 2.9rem
+}
+
+/* Letras BANNER FIM*/
+/* Letras BANNER FIM*/
+
+
+
+
+
+
+
+/* Banner */
+/* Banner */
+
+.banner {
+  height: 100vh;
+  background-image: url(img/bannerimg.jpg);
+  background-position: 100% -100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Banner FIM */
+/* Banner FIM */
+
+
+
+/* Pesquisa */
+/* Pesquisa */
+
+.searchBox {
+  display: flex;
+  max-width: 530px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: #000;
+  border-radius: 50px;
+  position: relative;
+  top: -290px;
+  margin: auto;
+}
+
+.searchButton {
+  color: white;
+  position: absolute;
+  right: 8px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--gradient-2, linear-gradient(90deg, #01A1C1 0%, #FE5F2F 100%));
+  border: 0;
+  display: inline-block;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+  transform: translateY(-3px);
+}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  padding: 24px 46px 24px 26px;
+}
+
+
+/* Pesquisa FIM */
+/* Pesquisa FIM */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Banner2 */
+/* Banner2 */
+
+
+.banner_2 .desen{
+  font-size: 17px;
+  color: #fff;
+  margin-left: 100px;
+}
+
+.banner_2 .desen-site {
+  font-size: 16px;
+  color: #fff;
+  margin-left: 100px;
+  margin-top: 25px;
+}
+
+.banner_2 .webs {
+  font-size: 105px;
+  color: #fff;
+  margin-left: 600px;
+  line-height: 100px;
+
+}
+
+.banner_2 .inovadoras {
+  font-size: 105px;
+  color: #fff;
+  margin-left: 720px;
+  line-height: 100px;
+
+}
+
+.banner_2img {
+  background-image: url(img/banner2.jpg);
+  filter: brightness(65%);
+  height: 100vh;
+  background-size: 893px ;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 800px;
+  left: 700px;
+  
+  
+  
+
+}
+
+
+
+/* Banner2 FIM*/
+/* Banner2 FIM*/
+
+
+
+/* showcase */
+/* showcase */
+
+.showcase {
+  background-color: #DFDFDF;
+  height: 750vh;
+}
+
+
+
+
+.planos {
+  font-weight: 500;
+  text-align: center;
+  line-height: 30px;
+  
+}
+.planos span{
+  font-weight: bolder;
+  
+}
+
+
+
+/* showcase FIM*/
+/* showcase FIM*/
+
+
+
+/* showcase cards */
+/* showcase cards */      
+
+
+.pack-cards {
+  position: relative;
+  display: inline-flex;
+  max-width: 350px;
+  flex-direction: column;
+  border-radius: 12px;
+  background-color: #000000;
+  border: 1px solid #ffffff;
+  margin-inline-start: 187px;
+  padding: 1.6rem;
+  color: #fff;
+  top: 120px;
+  box-shadow: 0 10px 6px 10px rgba(0, 0, 0, 0.1), 0 10px 8px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  position: relative;
+  margin: 0;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  border-radius: 0;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.titulo {
+  display: flex;
+  font-family: sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  color: #fff
+}
+
+.preco-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  font-family: sans-serif;
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.preco-container span:first-child {
+  margin-top: 10px;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.preco-container span:last-child {
+  align-self: flex-end;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.listas {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lista {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lista span {
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background-color: rgba(255, 255, 255, 0.185);
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lista span svg {
+  height: 12px;
+  width: 12px;
+}
+
+.lista p {
+  display: block;
+  font-family: sans-serif;
+}
+
+.button-cards {
+  margin-top: 20px;
+  padding: 0;
+  
+}
+.button_adq {
+  font-weight: 600;
+}
+
+.button-cards button {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: #000;
+  outline: 0;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+/* showcase cards FIM */
+/* showcase cards FIM */    
+
+
+
+
+/* sobre nos */
+/* sobre nos */
+
+.banner_3 >p {
+  font-size: 18px;
+  margin-top: 350px;
+}
+.sobre_container >p {
+  font-size: 18px;
+  margin-top: 350px;
+}
+
+.banner_3 >h1 {
+  font-size: 63px;
+
+}
+
+.sobre_nos{
+    display: flex;
+  margin-left: 1150px; 
+  font-weight: 600;
+  width: max-content;
+}
+
+.por_que {
+  display: flex;
+  margin-left: 800px;
+  margin-top: -600px;
+  font-weight: 600;
+  width: max-content;
+}
+
+
+.AGIMOS {
+  display: flex;
+  margin-left: 920px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.ASSIM {
+  display: flex;
+  margin-left: 800px;
+  font-weight: 600;
+}
+
+.busca {
+  display: flex;
+  position: relative;
+  top: -325px;
+  left: 1025px;
+  width: fit-content;
+}
+
+.banner_3img {
+  display: flex;
+  background-image: url(img/banner3.jpg);
+  height: 100vh;
+  background-size: 537.971px 785.236px;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 537.971px;
+height: 785.236px;
+  left: 100px;
+  top: 100px;
+}
+
+/* sobre nos FIM */
+/* sobre nos FIM */
+
+
+
+/* nossa historia */
+/* nossa historia */
+
+.banner_4 >p {
+  font-size: 18px;
+  margin-top: 350px;
+}
+.historia_container >p {
+  font-size: 18px;
+  margin-top: 184px;
+}
+
+.banner_4 >h1 {
+  font-size: 63px;
+
+}
+.nossa_historia{
+  display: flex;
+  margin-left: 200px; 
+  font-weight: 600;
+  
+}
+
+.seguindo {
+  display: flex;
+  margin-left: 197px;
+  margin-top: -600px;
+  font-weight: 600;
+  width: max-content;
+}
+
+
+.visão {
+  display: flex;
+  margin-left: 315px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.proposito {
+  display: flex;
+  margin-left: 197px;
+  font-weight: 600;
+}
+
+.cada_linha {
+  display: flex;
+  position: relative;
+  top: -325px;
+  left: 310px;
+  width: fit-content;
+}
+
+
+
+
+.banner_4img {
+  display: flex;
+  background-image: url(img/banner4.jpg);
+  height: 100vh;
+  background-size: 537.971px 785.236px;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 537.971px;
+height: 785.236px;
+  left: 900px;
+  top: 80px;
+}
+
+
+/* nossa historia FIM*/
+/* nossa historia FIM*/
+
+
+
+
+
+/* nossa equipe */
+/* nossa equipe */
+
+.equipe_container  {
+  margin-top: 184px;
+}
+
+
+.nossa_equipe {
+  font-weight: 500;
+  text-align: center;
+  line-height: 30px;
+  
+}
+.nossa_equipe span{
+  font-weight: bolder;
+}
+
+
+
+/* card equipe */
+/* card equipe */
+
+
+.cards_equipe {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  overflow: hidden;
+  margin-top: 150px;
+}
+
+.card_equipe {
+  position: relative;
+  height: 100%;
+  transition: all 700ms ease-in-out;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  flex: calc(100vw / 6) 1 1;
+}
+
+.card_equipe:hover {
+  flex-basis: 35%;
+}
+
+.card_equipe:hover .texto_equipe {
+  opacity: 1;
+}
+
+.card_equipe::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.5));
+}
+
+.card_equipe::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0);
+  transition: all 700ms ease-in-out;
+}
+
+.cards_equipe:hover .card_equipe::after {
+  background: rgba(0,0,0,0.6);
+  pointer-events: none;
+}
+
+.cards_equipe:hover .card_equipe.active::after {
+  background: rgba(0,0,0,0);
+}
+
+/* Texto/titulo */
+.titulo_equipe {
+  position: absolute;
+  left: 1rem;
+  top: 65%;
+  color: rgb(255, 255, 255);
+  font-family: 'Inter_R', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.texto_equipe {
+  position: absolute;
+  left: 1rem;
+  top: 75%;
+  width: 350px;
+  transition: all 400ms ease-in-out;
+  opacity: 0;
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.4;
+  color: #fff;
+}
+
+/* IMAGENS DA EQUIPE */
+.pessoa-1 {
+  background-image: url("img/f5c9aa520eda5bf0372354d2b46d4b79-removebg-preview\ \(1\).png");
+}
+.pessoa-2 {
+  background-image: url("img/ab6761610000e5ebefb3c3441bc1c8d4abb89234-removebg-preview.png");
+}
+.pessoa-3 {
+  background-image: url("img/FWMrcBCX0AEMiZ_-removebg-preview.png");
+}
+.pessoa-4 {
+  background-image: url("img/a3d113c58127ca7b0889ab9b5844cb5c-removebg-preview.png");
+}
+.pessoa-5 {
+  background-image: url("img/unnamed-removebg-preview.png");
+}
+
+/* card equipe FIM*/
+/* card equipe FIM*/
+
+
+/* roda pe */
+/* roda pe */
+
+.footer >h1 {
+  font-size: 63px;
+
+}
+
+
+.a {
+  display: flex;
+  margin-left: 197px;
+  margin-top: 200px;
+  font-weight: 600;
+  width: max-content;
+}
+
+
+.sua_nova {
+  display: flex;
+  margin-left: 315px;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.web_aqui {
+  display: flex;
+  margin-left: 197px;
+  font-weight: 600;
+}
+
+.links a{
+  display: flex ;
+  font-family: 'Inter_R', sans-serif;
+  color: #000;
+  text-decoration: none;  
+  text-align: center;
+  margin-left: 1200px;
+  position: relative;
+  top: -150px;
+  flex-direction: row;
+  font-weight: 500;
+  line-height: 25px;
+  
+}
+
+
+
+
+
+
+
+

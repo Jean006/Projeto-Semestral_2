@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CiaDasMassas_login_</title>
+    <link rel="stylesheet" href="Cia.css">
+    
+</head>
+<body>
+  <div class="header">
+    <div class="header_esquerda">
+        <img src="LogoCia.png" alt="">
+    </div>
+    <div class="header_">
+        <ul>
+            <li><a href="Cia.html">Inicio</a></li>
+            <li><a href="Sobre.html">Sobre</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+    <div class="header_menu">
+        <ul>
+            <label class="switch">
+                <input type="checkbox" class="checkbox" id="trocar-tema">
+                <div class="slider"></div>
+            </label>
+            <li class="hide_manu"><a href="login.html">Login</a></li>
+            <li><a href="#">Menu</a></li>
+        </ul>
+    </div>
+</div>
+<!-- ***************** header ******************** -->
+
+    <div id="form-ui">
+        <form action="" method="post" id="form">
+            <div id="form-1">
+                <div id="welcome-lines">
+                  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+                    <div id="welcome-line-1">Cia Das Massas</div>
+                    <div id="welcome-line-2">Bem-vindo de volta</div>
+                </link>
+                </div>
+                <div id="input-area">
+                    <div class="form-inp">
+                        <input placeholder="Endereço de email" type="text">
+                    </div>
+                    <div class="form-inp">
+                        <input placeholder="Senha" type="password"> 
+                    </div>
+                </div>
+                <div id="submit-button-cvr">
+                    <button id="submit-button" type="submit">Login</button>
+                </div>
+                <div id="forgot-pass">
+                    <a href="#" id="forgot-link">
+                      <span id="span">Esqueceu sua senha?</span>
+                    </a>
+                </div>
+                <div id="bar"></div>
+            </div>
+<!-- form-2 -->
+            <div id="form-2" style="display: none;">
+              <div id="form-2" style="display: none;">
+                <div id="welcome-lines">
+              </div>
+              <!-- || -->
+              <div id="input-area">
+                  <div class="form-inp">
+                      <input placeholder="Endereço de email" type="text">
+                  </div>
+                  <div class="form-inp">
+                      <input placeholder="Senha" type="password"> 
+                  </div>
+              </div>
+              <div id="submit-button-cvr">
+                  <button id="submit-button" type="submit">Login</button>
+              </div>
+              <div id="forgot-pass">
+                  <a href="#" id="forgot-link">Esqueceu sua senha?</a>
+              </div>
+              <div id="bar"></div>
+          </div>
+          <!-- || -->
+                <div id="form-2-content">
+                    <div class="form-inp">
+                        <input placeholder="Nome de usuário" type="text">
+                    </div>
+                    <div class="form-inp">
+                        <input placeholder="Email" type="email">
+                    </div>
+                    <div class="form-inp">
+                        <input placeholder="Senha" type="password">
+                    </div>
+                    <div id="form-2-submit-button-cvr">
+                        <button id="form-2-submit-button" type="submit">Redefinir senha</button>
+                    </div>
+                    <div id="forgot-pass">
+                      <a href="#" id="forgot-link-2">já tem uma conta?<span id="span">Entrar</span></a>
+                  </div>
+                </div>
+                <div id="bar-2"></div>
+            </div>
+            
+            </div>
+        </form>
+    </div>
+<!-- "fim"form-2 -->
+    <script>
+      // Adicione um evento de clique para o link "Esqueceu sua senha?"
+      document.querySelector("#forgot-link").addEventListener("click", function(event) {
+          // Evite que o link atualize a página (comportamento padrão)
+          event.preventDefault();
+  
+          // Oculte o form-1 e mostre o form-2
+          document.querySelector("#form-1").style.display = "none";
+          document.querySelector("#form-2").style.display = "block";
+        });
+          // Adicione um evento de clique para o link "Esqueceu sua senha?"
+      document.querySelector("#forgot-link-2").addEventListener("click", function(event) {
+          // Evite que o link atualize a página (comportamento padrão)
+          event.preventDefault();
+
+          // Oculte o form-1 e mostre o form-2
+          document.querySelector("#form-2").style.display = "none";
+          document.querySelector("#form-1").style.display = "block";
+      });
+  </script>
+  
+
+	
+	<style>
+    body{
+      background-color: black;
+      font-family: 'Inter', sans-serif;
+    }
+    
+
+		#form {
+  position: absolute;
+  right: 700px;
+  top: 150px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  width: 300px;
+  height: 472px;
+  padding: 25px;
+  background-color: #161616;
+  box-shadow: 0px 15px 60px #E0C076;
+  outline: 1px solid #E0C076;
+  border-radius: 10px;
+}
+
+#welcome-lines {
+  text-align: center;
+  line-height: 1;
+}
+
+#welcome-line-1 {
+  color: #E0C076;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+#welcome-line-2 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 17px;
+}
+
+#input-area {
+  margin-top: 40px;
+}
+
+.form-inp {
+  padding: 11px 25px;
+  background: transparent;
+  border: 1px solid #e3e3e3;
+  line-height: 1;
+  border-radius: 8px;
+}
+
+.form-inp:focus {
+  border: 1px solid #E0C076;
+}
+
+.form-inp:first-child {
+  margin-bottom: 15px;
+}
+
+.form-inp input {
+  width: 100%;
+  background: none;
+  font-size: 13.4px;
+  color: #E0C076;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-inp input:focus {
+  outline: none;
+}
+
+#submit-button-cvr {
+  margin-top: 20px;
+}
+
+#submit-button {
+  display: block;
+  width: 100%;
+  color: #E0C076;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
+  padding: 14px 13px 12px 13px;
+  border: 0;
+  outline: 1px solid #E0C076;
+  border-radius: 8px;
+  line-height: 1;
+  cursor: pointer;
+  transition: all ease-in-out .3s;
+}
+
+#submit-button:hover {
+  transition: all ease-in-out .3s;
+  background-color: #E0C076;
+  color: #161616;
+  cursor: pointer;
+}
+
+#forgot-pass {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#forgot-pass a {
+  color: #868686;
+  font-size: 12px;
+  text-decoration: none;
+}
+  
+#form-2 {
+    display: none;
+}
+
+#form-2-content {
+    text-align: center;
+}
+
+#form-2-content .form-inp {
+    padding: 11px 25px;
+    background: transparent;
+    border: 1px solid #e3e3e3;
+    line-height: 1;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+#form-2-content .form-inp input {
+    width: 100%;
+    background: none;
+    font-size: 13.4px;
+    color: #E0C076;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+#form-2-submit-button-cvr {
+    margin-top: 20px;
+}
+
+#form-2-submit-button {
+    display: block;
+    width: 100%;
+    color: #E0C076;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+    padding: 14px 13px 12px 13px;
+    border: 0;
+    outline: 1px solid #E0C076;
+    border-radius: 8px;
+    line-height: 1;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+#form-2-submit-button:hover {
+    transition: all ease-in-out .3s;
+    background-color: #E0C076;
+    color: #161616;
+    cursor: pointer;
+}
+#span{
+  background-color: transparent;
+  color: #E0C076;
+}
+	</style>
+</body>
+</html>

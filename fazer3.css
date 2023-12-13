@@ -1,0 +1,262 @@
+@font-face {
+    font-family: 'Inter_R';
+    src: url('font/Inter-Regular.ttf');
+  
+  }
+  
+  @font-face {
+    font-family: 'Inter_L';
+    src: url('font/Inter-Light.ttf');
+  
+  }
+   
+  @font-face {
+    font-family: 'Poppins';
+    src: url('font/Poppins-Black.ttf');
+  }
+
+
+
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter_R', sans-serif;
+}
+
+body {
+  width: 100%;height: 100%;
+}
+  
+
+/* header */
+/* header */
+
+a {
+    text-decoration: none;
+}
+
+
+ul li {
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+    
+    
+}
+
+.header_esquerda {
+    margin: 0 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.header_esquerda  {
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+    margin-top: -18px;
+    font-weight: 500;
+}
+
+.header_meio img {
+    position: relative;
+    width: 43px;
+    height: 43px;
+    top: 19px;
+    left: 20px;
+    
+}
+
+
+.header_meio ul {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.header_meio ul li {
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.header_meio ul li:hover {
+    background: linear-gradient(90deg, #01A1C1 0%, #FE5F2F 100%);
+    height: 30px;
+ 
+}
+
+
+
+.header_meio ul li a {
+    color: #ffffff;
+    margin: 0px 8px;
+    padding: 6px 8px;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+}
+
+.header_direita {
+    margin-right: 32px;
+}
+
+.header_direita ul {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.header_direita ul li {
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.header_direita ul li:hover {
+  background: linear-gradient(90deg, #01A1C1 0%, #FE5F2F 100%);
+  height: 30px;;
+}
+
+.header_direita ul li a {
+    color: #ffffff;
+    margin: 0px 8px;
+    padding: 6px 8px;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+}
+
+/* header FIM */
+/* header FIM */
+
+/*******************************************************************************************/
+
+.section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 9;
+}
+
+/* BANNER_1 */
+/* BANNER_1 */
+
+.banner_1 {
+    background-image: url(img/bannerimg.jpg);
+    position: relative;
+
+}
+
+/* Letras BANNER 1*/
+/* Letras BANNER 1*/
+
+
+
+
+
+
+
+
+
+.form {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    width: 450px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+    margin: auto;
+    margin-top: 10%;
+  }
+  
+  .form .title {
+    color: rgb(82, 82, 82);
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form input {
+    outline: 0;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 8px 14px;
+    border-radius: 8px;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .form textarea {
+    border-radius: 8px;
+    height: 100px;
+    width: 100%;
+    resize: none;
+    outline: 0;
+    padding: 8px 14px;
+    border: 1px solid rgb(219, 213, 213);
+  }
+  
+  
+      
+
+  .choose-btn {
+    width: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.375rem;
+    background-color: rgba(82, 82, 82, 1);
+    padding: 10px ;
+    font-weight: 600;
+    color: #fff;
+    transform: all .15s ease;
+    margin: auto;
+  }
+  
+  .choose-btn:hover {
+    opacity: .9;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+/* Letras BANNER 1 FIM*/
+/* Letras BANNER 1 FIM*/
+

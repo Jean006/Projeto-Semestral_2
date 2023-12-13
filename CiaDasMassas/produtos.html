@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Cia.css">
+</head>
+<body>
+
+        <div class="header">
+            <div class="header_esquerda">
+                <img src="LogoCia.png" alt="">
+            </div>
+            <div class="header_">
+                <ul>
+                    <li><a href="Cia.html">Inicio</a></li>
+                    <li><a href="Sobre.html">Sobre</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="header_menu">
+                <ul>
+                    <label class="switch">
+                        <input type="checkbox" class="checkbox" id="trocar-tema">
+                        <div class="slider"></div>
+                    </label>
+                    <li class="hide_manu"><a href="login.html">Login</a></li>
+                    <li><a href="#">Menu</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- ***************** header ******************** -->
+        <!-- ***************** inicio ******************** -->
+        <section id="fullpage">
+            <section  class="section section_2 ">
+             
+            <div id="carrinho-icon" onclick="toggleCarrinho()">
+                <div class="imagem">
+                    <img src="img/cesta.png" alt="">
+                </div>
+                <span id="cont-carrinho"></span>
+            </div>
+            <div id="carrinho-itens" >
+                <ul id="itens-lista"></ul>
+                <span id="preco-total">Valor Total: R$0,00</span>
+                <button class="limpa" onclick="limparCarrinho()">Limpar</button>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+            <div class="produtos">
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="https://www.ciadasmassas.com.br/wp-content/uploads/2019/02/08_broto300g_Pack-1-400x400.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Massa para Pizza Broto com Molho</h3>
+                            <p>R$ 1000,99</p>
+                            <button onclick="addCarrinho('chuteira-1', 1000.99)">Adicionar</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="https://www.ciadasmassas.com.br/wp-content/uploads/2019/02/04_-Massa_pizza_300_Pack-02-1-400x400.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Massa para Pizza Média</h3>
+                            <p>R$ 999,99</p>
+                            <button onclick="addCarrinho('chuteira-2', 999.99)">Adicionar</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="https://www.ciadasmassas.com.br/wp-content/uploads/2019/02/06_-Massa_pizza_brota%CC%83o_300_Pack-1-400x400.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Massa para Pizza Brotão</h3>
+                            <p>R$ 999,00</p>
+                            <button onclick="addCarrinho('chuteira-3', 999.00)">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="https://www.ciadasmassas.com.br/wp-content/uploads/2019/02/10_Pizza_Brotinho_300g_Pack-400x400.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Massa para Pizza Brotinho - 300g</h3>
+                            <p>R$ 999,99</p>
+                            <button onclick="addCarrinho('chuteira-4', 999.99)">Adicionar</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="https://www.ciadasmassas.com.br/wp-content/uploads/2019/02/01_Massa_Pastel_2_kg_Pack-1-400x400.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Massa para Pastel Cortada - 22 X 20cm</h3>
+                            <p>R$ 799,00</p>
+                            <button onclick="addCarrinho('chuteira-5', 799.00)">Adicionar</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="https://www.ciadasmassas.com.br/wp-content/uploads/2019/02/03_Massa_Pastel_Prof2_2kg_Pack-1-400x400.jpg" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Massa para Pastel - 2 kg</h3>
+                            <p>R$ 699,99</p>
+                            <button onclick="addCarrinho('chuteira-6', 699.99)">Adicionar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+        </section>
+        
+    <style>
+        img{
+    width: 100%;
+    height: auto;
+}
+
+/* HEADER */
+.container {
+  margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#carrinho-icon img {
+    width: 50px;
+}
+
+#header, #main {
+    margin: 0 128px;
+}
+
+#carrinho-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: baseline;
+}
+
+.produto-linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    margin: 15px 0;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    height: 280px;
+    justify-content: space-between;
+    align-items: center;    
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 140px;
+
+    
+}
+.produtos {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.produtos img {
+    width: 150px;
+}
+button {
+  width: 150px;
+  height: 40px;
+  border: 3px solid #E0C076;
+  border-radius: 5px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: #E0C076;
+  font-size: 1.2em;
+  font-weight: 550;
+  font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+  background: #E0C076;
+  color: white;
+  font-size: 1.5em;
+}
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+#carrinho-itens {
+    border: 1px solid black;
+    padding: 10px;
+    position: absolute;
+    left: 80%;
+    text-align: center;
+    top: 10%;
+    background-color: white;
+}
+
+.add {
+    background-color: greenyellow;
+}
+.remove {
+    background-color: red;
+}
+.add, .remove {
+    padding: 2px 5px;
+    border-radius: 10px;
+    width: 23px;
+    color: white;
+}
+
+.limpa {
+    background-color: darkgrey;
+}
+
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="Cia.js"></script>
+</body>
+</html>
